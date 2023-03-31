@@ -159,7 +159,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -209,7 +209,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -623,12 +623,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 466176726783605505, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466176726783605508, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
+      propertyPath: speed
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 466176726783605508, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
       propertyPath: ropeEnd
       value: 
       objectReference: {fileID: 7592967046675606615}
+    - target: {fileID: 466176726783605508, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
+      propertyPath: playerR2D
+      value: 
+      objectReference: {fileID: 466176727231891160}
+    - target: {fileID: 466176726783605508, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
+      propertyPath: vertSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 466176726783605509, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
       propertyPath: m_Name
       value: player
@@ -682,6 +694,11 @@ PrefabInstance:
 --- !u!4 &466176727231891158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466176726783605510, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
+  m_PrefabInstance: {fileID: 466176727231891157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &466176727231891160 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 466176726783605505, guid: be0cfab28f68d154392fb761c102b6a9, type: 3}
   m_PrefabInstance: {fileID: 466176727231891157}
   m_PrefabAsset: {fileID: 0}
 --- !u!233 &466176727231891163
@@ -847,7 +864,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -892,7 +909,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
