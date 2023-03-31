@@ -6,7 +6,9 @@ public class player : MonoBehaviour
 {
     public float speed;
     public float vertSpeed;
+    public float ropeSpeed;
     public Rigidbody2D ropeEnd;
+    public Transform ropeStart;
     public Rigidbody2D playerR2D;
     // Start is called before the first frame update
     void Start()
@@ -24,5 +26,12 @@ public class player : MonoBehaviour
         this.transform.position = newPosition;
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
+
+        if(Input.GetAxis("Mouse Y")<0){
+            ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+ropeSpeed);
+        }
+        if(Input.GetAxis("Mouse Y")>0){
+            ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+-ropeSpeed);
+        }
     }
 }
