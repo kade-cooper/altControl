@@ -6,6 +6,7 @@ TagManager:
   tags:
   - rope
   - player
+  - ropeEnd
   layers:
   - Default
   - TransparentFX
