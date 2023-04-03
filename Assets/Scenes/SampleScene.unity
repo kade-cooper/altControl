@@ -352,6 +352,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1138481347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1396803210174333973, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+  m_PrefabInstance: {fileID: 1396803209485019857}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1341228825
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +651,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 235916929696559119, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2237
+      objectReference: {fileID: 0}
+    - target: {fileID: 235916929696559119, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9419
+      objectReference: {fileID: 0}
     - target: {fileID: 592560274759389738, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
       propertyPath: m_Name
       value: ropeHolder
@@ -662,6 +675,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ropeEnd
       objectReference: {fileID: 0}
+    - target: {fileID: 1520598593026452495, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: ropeEndT
+      value: 
+      objectReference: {fileID: 1138481347}
     - target: {fileID: 1520598593026452529, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -708,11 +725,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2495443247174551490, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
       propertyPath: m_Color.a
-      value: 0.21176471
+      value: 0.05490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777409030695693589, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452000325907847156, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.0216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452000325907847156, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7608
       objectReference: {fileID: 0}
     - target: {fileID: 6231727071729146342, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
       propertyPath: m_Color.a
-      value: 0.1764706
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140587845407286796, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+      propertyPath: m_Color.a
+      value: 0.14117648
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
