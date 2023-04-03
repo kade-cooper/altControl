@@ -32,9 +32,6 @@ public class player : MonoBehaviour
         if(Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=this.transform.position.y+1){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+ropeSpeed);
         }
-        Debug.Log(ropeStart.position.y>=this.transform.position.y);
-        Debug.Log(ropeStart.position.y+"rope");
-        Debug.Log(this.transform.position.y+"player");
         if(Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=this.transform.position.y-3){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y-ropeSpeed);
         }
