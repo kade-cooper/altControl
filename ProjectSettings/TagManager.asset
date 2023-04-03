@@ -45,3 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: trees
+    uniqueID: 986377633
+    locked: 0
+  - name: rescuable
+    uniqueID: 4116480769
+    locked: 0

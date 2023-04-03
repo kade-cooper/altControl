@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class player : MonoBehaviour
 {
@@ -12,10 +13,14 @@ public class player : MonoBehaviour
     public Transform ropeStart;
     public Rigidbody2D playerR2D;
     public GameObject person;
+    public int carried=0;
+    public int maxCarried=4;
+    public TextMeshProUGUI capacity;
+    public Transform modelLocation;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()
@@ -29,10 +34,10 @@ public class player : MonoBehaviour
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
 
-        if(Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=this.transform.position.y+1){
+        if(Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=modelLocation.position.y+1){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+ropeSpeed);
         }
-        if(Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=this.transform.position.y-3){
+        if(Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=modelLocation.position.y-3){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y-ropeSpeed);
         }
     }
@@ -40,6 +45,13 @@ public class player : MonoBehaviour
         person.gameObject.GetComponent<Renderer> ().enabled = true;
         ropeEndO.tag = "ropeEndDisabled";
         Debug.Log(ropeEndO.tag);
+    }
+    public void addCarried(){
+        carried+=1;
+        capacity.text="Capacity: "+carried+"/4";
+        if(carried<maxCarried){
+            person.gameObject.SendMessage("enableRopeEnd");
+        }
     }
 
     
