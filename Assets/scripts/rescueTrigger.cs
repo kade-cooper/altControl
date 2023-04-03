@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class rescueTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject rescue;
     private void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.CompareTag("player")){
             other.gameObject.SendMessage("dropOff");
+            rescue.gameObject.SendMessage("enableRopeEnd");
         }
     }
 }
