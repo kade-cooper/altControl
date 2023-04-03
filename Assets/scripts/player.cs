@@ -8,9 +8,10 @@ public class player : MonoBehaviour
     public float vertSpeed;
     public float ropeSpeed;
     public Rigidbody2D ropeEnd;
-    public Transform ropeEndT;
+    public GameObject ropeEndO;
     public Transform ropeStart;
     public Rigidbody2D playerR2D;
+    public GameObject person;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,4 +39,11 @@ public class player : MonoBehaviour
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y-ropeSpeed);
         }
     }
+    public void enablePerson(){
+        person.gameObject.GetComponent<Renderer> ().enabled = true;
+        ropeEndO.tag = "ropeEndDisabled";
+        Debug.Log(ropeEndO.tag);
+    }
+
+    
 }
