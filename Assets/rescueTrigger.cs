@@ -15,4 +15,9 @@ public class rescueTrigger : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.CompareTag("player")){
+            other.gameObject.SendMessage("dropOff");
+        }
+    }
 }

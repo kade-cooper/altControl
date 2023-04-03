@@ -53,6 +53,9 @@ public class player : MonoBehaviour
             person.gameObject.SendMessage("enableRopeEnd");
         }
     }
-
+    public void dropOff(){
+        carried=0;
+        capacity.text="Capacity: "+carried+"/4";
+    }
     
 }
