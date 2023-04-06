@@ -57,5 +57,4 @@ public class player : MonoBehaviour
         carried=0;
         capacity.text="Capacity: "+carried+"/4";
     }
-    
 }
