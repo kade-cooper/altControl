@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class cameraFollow : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public Vector3 offset;
   
   void Update () 
   {
-      transform.position = new Vector3 (player.position.x + offset.x, player.position.y + offset.y, offset.z); 
-  }
+    player = GameObject.FindWithTag("player");
+    transform.position = new Vector3 (player.transform.position.x + offset.x, player.transform.position.y + offset.y, offset.z); 
+  } 
 }

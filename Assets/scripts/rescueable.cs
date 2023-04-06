@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rescueable : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -12,5 +12,8 @@ public class rescueable : MonoBehaviour
             player.SendMessage("enablePerson");
             Destroy(this.gameObject, 0f);
         }
+    }
+    void Update(){
+        player = GameObject.FindWithTag("player");
     }
 }
