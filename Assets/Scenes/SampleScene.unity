@@ -7377,6 +7377,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.x
       value: 0.18397298
       objectReference: {fileID: 0}
+    - target: {fileID: 3657030462632516669, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: m_Name
       value: player
