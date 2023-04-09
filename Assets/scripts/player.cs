@@ -17,6 +17,7 @@ public class player : MonoBehaviour
     public int maxCarried=4;
     public TextMeshProUGUI capacity;
     public Transform modelLocation;
+    public bool paused=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +35,10 @@ public class player : MonoBehaviour
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
 
-        if(Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=modelLocation.position.y+1){
+        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=modelLocation.position.y+1){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+ropeSpeed);
         }
-        if(Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=modelLocation.position.y-3){
+        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=modelLocation.position.y-3){
             ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y-ropeSpeed);
         }
     }
@@ -56,5 +57,12 @@ public class player : MonoBehaviour
     public void dropOff(){
         carried=0;
         capacity.text="Capacity: "+carried+"/4";
+    }
+
+    public void pauseEnabled(){
+        paused=true;
+    }
+    public void pauseDisabled(){
+        paused=false;
     }
 }
