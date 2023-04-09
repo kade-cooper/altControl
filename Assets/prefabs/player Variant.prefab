@@ -156,7 +156,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 1520598593026452490, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+    - {fileID: 2944247156661932948, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
+    - {fileID: 8357017643608299072, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
 --- !u!4 &1983938627173609463 stripped
 Transform:
@@ -168,8 +169,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 732026173141830891, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
   m_PrefabInstance: {fileID: 2871644586285117495}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1720462927
-BoxCollider2D:
+--- !u!60 &5974696808341147135
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -191,16 +192,19 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5041144, y: -0.29644465}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &3450623624295752221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 592560274759389738, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
   m_PrefabInstance: {fileID: 2871644586285117495}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1453794895
-BoxCollider2D:
+--- !u!60 &2666677779377112135
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -222,9 +226,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5042608, y: -0.2876021}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &3798874895278033086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1396803209602857097, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}

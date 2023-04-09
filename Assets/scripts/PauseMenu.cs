@@ -47,5 +47,10 @@ public void Quit(){
 }
 public void Menu(){
     SceneManager.LoadScene("Menu");
+    Time.timeScale = 1f;
+}
+public void Restart(){
+    SceneManager.LoadScene("SampleScene");
+    Time.timeScale = 1f;
 }
     }
