@@ -11,6 +11,7 @@ public class player : MonoBehaviour
     public Rigidbody2D ropeEnd;
     public GameObject ropeEndO;
     public Transform ropeStart;
+    public Transform rope;
     public Rigidbody2D playerR2D;
     public GameObject person;
     public int carried=0;
@@ -35,11 +36,11 @@ public class player : MonoBehaviour
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
 
-        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<=modelLocation.position.y+1){
-            ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y+ropeSpeed);
+        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<modelLocation.position.y+3.5){
+            rope.position=new Vector2(rope.position.x,rope.position.y+ropeSpeed);
         }
-        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>=modelLocation.position.y-3){
-            ropeStart.position=new Vector2(ropeStart.position.x,ropeStart.position.y-ropeSpeed);
+        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>modelLocation.position.y-1){
+            rope.position=new Vector2(rope.position.x,rope.position.y-ropeSpeed);
         }
     }
     public void enablePerson(){
