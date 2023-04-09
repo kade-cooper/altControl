@@ -13,7 +13,7 @@ public class ground : MonoBehaviour
             //Debug.Log("plz work");
             Destroy(other.gameObject);
             //Instantiate(playerPrefab, new Vector3(-6,2,0), Quaternion.identity);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
