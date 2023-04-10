@@ -14,6 +14,7 @@ public class player : MonoBehaviour
     public Transform rope;
     public Rigidbody2D playerR2D;
     public GameObject person;
+    public GameObject animalModel;
     private int carried=0;
     public int maxCarried=4;
     public TextMeshProUGUI capacity;
@@ -38,15 +39,15 @@ public class player : MonoBehaviour
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
 
-        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<modelLocation.position.y+3.5){
+        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<modelLocation.position.y+4){
             rope.position=new Vector2(rope.position.x,rope.position.y+ropeSpeed);
         }
-        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>modelLocation.position.y-1){
+        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>modelLocation.position.y){
             rope.position=new Vector2(rope.position.x,rope.position.y-ropeSpeed);
         }
     }
     public void enablePerson(){
-        person.gameObject.GetComponent<Renderer> ().enabled = true;
+        animalModel.gameObject.GetComponent<Renderer> ().enabled = true;
         ropeEndO.tag = "ropeEndDisabled";
         Debug.Log(ropeEndO.tag);
     }
