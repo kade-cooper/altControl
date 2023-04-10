@@ -43,7 +43,7 @@ public void Pause ()
 }
 public void Quit(){
     Application.Quit();
-    UnityEditor.EditorApplication.isPlaying = false;
+    //UnityEditor.EditorApplication.isPlaying = false;
 }
 public void Menu(){
     SceneManager.LoadScene("Menu");
