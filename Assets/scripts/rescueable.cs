@@ -16,17 +16,19 @@ public class rescueable : MonoBehaviour
             Debug.Log(capacity);
         }
         else if(other.gameObject.CompareTag("ropeEndDisabled")){
+            Debug.Log(capacity);
             capacity.SetActive(true);
         }
     }
     private void OnCollisionExit2D(Collision2D other){
         if(other.gameObject.CompareTag("ropeEndDisabled")){
-            capacity.SetActive(true);
+            capacity.SetActive(false);
         }
     }
     void Start(){
+        Debug.Log(this.gameObject);
         player = GameObject.FindWithTag("player");
-        Debug.Log(capacity);
+        //Debug.Log(capacity);
         //capacitytxt = text.Find("atCapacity");
     }
 }

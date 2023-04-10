@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
 
     public static bool GameIsPaused = false;
-
+    public bool CanPause=true;
     public GameObject pauseMenuUI;
     public GameObject player;
     
 
     // Update is called once per frame
     void Update() {
-       if (Input.GetKeyDown(KeyCode.Escape))
+       if (Input.GetKeyDown(KeyCode.Escape)&&CanPause)
         {
             if (GameIsPaused)
             {
@@ -52,5 +52,8 @@ public void Menu(){
 public void Restart(){
     SceneManager.LoadScene("SampleScene");
     Time.timeScale = 1f;
+}
+public void togglePauseBool(){
+    CanPause = false;
 }
     }

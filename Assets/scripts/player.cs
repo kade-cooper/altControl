@@ -22,10 +22,19 @@ public class player : MonoBehaviour
     public bool paused=false;
     private int rescued=0;
     public GameObject winMenuUI;
+    public AudioSource audio;
+    public AudioSource audio2;
+    public GameObject pauseMenu;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        InvokeRepeating("PlaySound",0.001f,.8f);
+    }
+
+    void PlaySound(){
+        audio.Play();
+        audio2.Play();
     }
 
     void Update()
@@ -63,8 +72,9 @@ public class player : MonoBehaviour
         carried=0;
         if(rescued==8){
             winMenuUI.SetActive(true);
-            Time.timeScale = 0f;
             pauseEnabled();
+            pauseMenu.SendMessage("togglePauseBool");
+            Time.timeScale = 0f;
         }
         capacity.text="Capacity: "+carried+"/4";
     }
