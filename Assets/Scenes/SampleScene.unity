@@ -10082,6 +10082,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2037001046}
     - target: {fileID: 3657030462632516664, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: winMenuUI
+      value: 
+      objectReference: {fileID: 257998846}
+    - target: {fileID: 3657030462632516664, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: animalModel
       value: 
       objectReference: {fileID: 134983079}

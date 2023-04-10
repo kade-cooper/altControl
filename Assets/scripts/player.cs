@@ -39,10 +39,10 @@ public class player : MonoBehaviour
         playerR2D.AddForce(force);
         ropeEnd.AddForce(new Vector2(-moveVec.x*0.2f,0f));
 
-        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<modelLocation.position.y+3.5){
+        if(!paused && Input.GetAxis("Mouse Y")<0 && ropeStart.position.y<modelLocation.position.y+4){
             rope.position=new Vector2(rope.position.x,rope.position.y+ropeSpeed);
         }
-        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>modelLocation.position.y-1){
+        if(!paused && Input.GetAxis("Mouse Y")>0 && ropeStart.position.y>modelLocation.position.y){
             rope.position=new Vector2(rope.position.x,rope.position.y-ropeSpeed);
         }
     }
