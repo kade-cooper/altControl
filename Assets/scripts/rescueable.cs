@@ -6,7 +6,7 @@ using TMPro;
 public class rescueable : MonoBehaviour
 {
     private GameObject player;
-    public TextMeshProUGUI capacity;
+    public GameObject capacity;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -16,12 +16,12 @@ public class rescueable : MonoBehaviour
             Debug.Log(capacity);
         }
         else if(other.gameObject.CompareTag("ropeEndDisabled")){
-            capacity.text="AT CAPACITY";
+            capacity.SetActive(true);
         }
     }
     private void OnCollisionExit2D(Collision2D other){
         if(other.gameObject.CompareTag("ropeEndDisabled")){
-            capacity.text="";
+            capacity.SetActive(true);
         }
     }
     void Start(){
