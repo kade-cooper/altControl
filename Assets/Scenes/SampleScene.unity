@@ -940,7 +940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &257998847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6080,7 +6080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7dbebd0b07d8a49a7d0b8aa047189b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 75
+  timer: 85
   time: {fileID: 1666847911}
   failMenuUI: {fileID: 765642359}
   player: {fileID: 1401093485}
@@ -9965,6 +9965,10 @@ PrefabInstance:
       propertyPath: ropeStart
       value: 
       objectReference: {fileID: 2037001046}
+    - target: {fileID: 3657030462632516664, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: winMenuUI
+      value: 
+      objectReference: {fileID: 257998846}
     - target: {fileID: 3657030462632516669, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.18397298

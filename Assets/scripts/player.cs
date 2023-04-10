@@ -14,11 +14,13 @@ public class player : MonoBehaviour
     public Transform rope;
     public Rigidbody2D playerR2D;
     public GameObject person;
-    public int carried=0;
+    private int carried=0;
     public int maxCarried=4;
     public TextMeshProUGUI capacity;
     public Transform modelLocation;
     public bool paused=false;
+    private int rescued=0;
+    public GameObject winMenuUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +58,13 @@ public class player : MonoBehaviour
         }
     }
     public void dropOff(){
+        rescued+=carried;
         carried=0;
+        if(rescued==8){
+            winMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            pauseEnabled();
+        }
         capacity.text="Capacity: "+carried+"/4";
     }
 
