@@ -8682,6 +8682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce3f9ab1e8ca2043ac8d767777b2d5c, type: 3}
+--- !u!4 &1721273693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 521684492709517769, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  m_PrefabInstance: {fileID: 3798874895371754214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1746625718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10751,6 +10756,10 @@ PrefabInstance:
       propertyPath: animalModel
       value: 
       objectReference: {fileID: 134983079}
+    - target: {fileID: 395113764825741301, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1391663891783219208, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: m_Constraints
       value: 2
@@ -10855,6 +10864,10 @@ PrefabInstance:
       propertyPath: animalModel
       value: 
       objectReference: {fileID: 134983079}
+    - target: {fileID: 3657030462632516664, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: modelLocation
+      value: 
+      objectReference: {fileID: 1721273693}
     - target: {fileID: 3657030462632516669, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.18397298
@@ -10882,6 +10895,14 @@ PrefabInstance:
     - target: {fileID: 4837949614082401961, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.442
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278875545173202491, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188013925160937937, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6289225327222194343, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
