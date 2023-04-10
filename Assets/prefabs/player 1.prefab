@@ -712,12 +712,14 @@ MonoBehaviour:
   ropeEnd: {fileID: 1396803210174333968}
   ropeEndO: {fileID: 1396803210174333969}
   ropeStart: {fileID: 1396803209878193306}
+  rope: {fileID: 0}
   playerR2D: {fileID: 1520598593026452492}
   person: {fileID: 8826458256915337651}
   carried: 0
   maxCarried: 4
   capacity: {fileID: 0}
   modelLocation: {fileID: 4346673079433912256}
+  paused: 0
 --- !u!50 &1520598593026452492
 Rigidbody2D:
   serializedVersion: 4
