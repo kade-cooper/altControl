@@ -14,6 +14,7 @@ public class player : MonoBehaviour
     public Transform rope;
     public Rigidbody2D playerR2D;
     public GameObject person;
+    public GameObject animalModel;
     private int carried=0;
     public int maxCarried=4;
     public TextMeshProUGUI capacity;
@@ -46,7 +47,7 @@ public class player : MonoBehaviour
         }
     }
     public void enablePerson(){
-        person.gameObject.GetComponent<Renderer> ().enabled = true;
+        animalModel.gameObject.GetComponent<Renderer> ().enabled = true;
         ropeEndO.tag = "ropeEndDisabled";
         Debug.Log(ropeEndO.tag);
     }
