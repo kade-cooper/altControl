@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2815d2acfeb64f44a37f0bd0f8de50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capacity: {fileID: 0}
 --- !u!33 &2889716984314773233
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -106,6 +107,8 @@ GameObject:
   m_Component:
   - component: {fileID: 862781901546529776}
   - component: {fileID: 862781901546529778}
+  - component: {fileID: 8072482989754818973}
+  - component: {fileID: 2547834898870441663}
   m_Layer: 0
   m_Name: rescuable
   m_TagString: Untagged
@@ -141,6 +144,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2815d2acfeb64f44a37f0bd0f8de50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capacity: {fileID: 0}
+--- !u!111 &8072482989754818973
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862781901546529676}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400002, guid: 265ee6fac4cc17345b23403e90e2ba45, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &2547834898870441663
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862781901546529676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 265ee6fac4cc17345b23403e90e2ba45, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5456235615565556392
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,3 +295,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2815d2acfeb64f44a37f0bd0f8de50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capacity: {fileID: 0}
