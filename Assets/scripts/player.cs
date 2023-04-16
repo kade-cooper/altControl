@@ -23,7 +23,7 @@ public class player : MonoBehaviour
     private int rescued=0;
     public GameObject winMenuUI;
     public AudioSource audio;
-    public AudioSource audio2;
+    //public AudioSource audio2;
     public GameObject pauseMenu;
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class player : MonoBehaviour
 
     void PlaySound(){
         audio.Play();
-        audio2.Play();
+        //audio2.Play();
     }
 
     void Update()
