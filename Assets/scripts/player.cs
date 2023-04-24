@@ -25,6 +25,7 @@ public class player : MonoBehaviour
     public AudioSource audio;
     //public AudioSource audio2;
     public GameObject pauseMenu;
+    public GameObject animalBoom;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +71,9 @@ public class player : MonoBehaviour
     public void dropOff(){
         rescued+=carried;
         carried=0;
+        if(carried>0){
+            Instantiate(animalBoom,this.transform.position,Quaternion.identity);
+        }
         if(rescued==8){
             winMenuUI.SetActive(true);
             pauseEnabled();
