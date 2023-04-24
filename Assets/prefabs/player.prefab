@@ -524,22 +524,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &3798874896283152162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5580528587520636880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51588bf73cba26f43a86298d107eaf81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ropeEndO: {fileID: 2624918215540990578}
-  player: {fileID: 2624918215038607082}
-  animalModel: {fileID: 134983079}
-  audio: {fileID: 1339258309}
 --- !u!82 &1339258309
 AudioSource:
   m_ObjectHideFlags: 0
@@ -550,7 +534,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0883a81390ab5294e84e9dc9a5eee7a3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 434678efca7483c4983e2482cc66cfea, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -636,6 +620,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3798874896283152162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5580528587520636880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51588bf73cba26f43a86298d107eaf81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropeEndO: {fileID: 2624918215540990578}
+  player: {fileID: 2624918215038607082}
+  animalModel: {fileID: 134983079}
+  audio: {fileID: 1339258309}
 --- !u!4 &6050054107819471101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7276119368020006558, guid: 6b894d5df5d7f5c46b1b7e51b2231c70, type: 3}
