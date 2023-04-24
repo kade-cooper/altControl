@@ -26,6 +26,7 @@ public class player : MonoBehaviour
     //public AudioSource audio2;
     public GameObject pauseMenu;
     public GameObject animalBoom;
+    public GameObject heliAnimObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,15 @@ public class player : MonoBehaviour
         moveVec.x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         moveVec.y = Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
         Vector2 force = new Vector3(moveVec.x, 0f, 0f);
+        if(moveVec.x>0){
+            heliAnimObj.SendMessage("moveRight");
+        }
+        if(moveVec.x<0){
+            heliAnimObj.SendMessage("moveLeft");
+        }
+        else{
+            heliAnimObj.SendMessage("idle");
+        }
         Vector2 newPosition = this.transform.position + new Vector3(0f, moveVec.y, 0f);
         this.transform.position = newPosition;
         playerR2D.AddForce(force);

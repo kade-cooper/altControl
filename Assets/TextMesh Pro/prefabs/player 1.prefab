@@ -722,8 +722,8 @@ MonoBehaviour:
   paused: 0
   winMenuUI: {fileID: 0}
   audio: {fileID: 0}
-  audio2: {fileID: 0}
   pauseMenu: {fileID: 0}
+  animalBoom: {fileID: 0}
 --- !u!50 &1520598593026452492
 Rigidbody2D:
   serializedVersion: 4
@@ -1721,7 +1721,9 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 1827226128182048838, guid: 24181d6e18faed5428ab9c0b6eedabd2, type: 3}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: bd87eea718c1cbd42b887a3e88a7c9c9, type: 2}
+  - {fileID: 7400000, guid: 94297587e6f8ef24984e7664ea49fc2e, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
