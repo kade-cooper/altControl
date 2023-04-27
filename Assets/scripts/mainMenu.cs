@@ -11,8 +11,11 @@ public class mainMenu : MonoBehaviour
         //UnityEditor.EditorApplication.isPlaying = false;
     
     }
-    public void Play(){
+    public void Lvl1(){
         SceneManager.LoadScene("SampleScene");
+    }   
+    public void Lvl2(){
+        SceneManager.LoadScene("level2");
     }   
 
     public void Controls(){
