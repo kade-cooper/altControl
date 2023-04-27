@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour {
     public bool CanPause=true;
     public GameObject pauseMenuUI;
     public GameObject player;
+    public string currentLevel;
     
 
     // Update is called once per frame
@@ -46,11 +47,11 @@ public void Quit(){
     //UnityEditor.EditorApplication.isPlaying = false;
 }
 public void Menu(){
-    SceneManager.LoadScene("Menu");
+    SceneManager.LoadScene("Title");
     Time.timeScale = 1f;
 }
 public void Restart(){
-    SceneManager.LoadScene("SampleScene");
+    SceneManager.LoadScene(currentLevel);
     Time.timeScale = 1f;
 }
 public void togglePauseBool(){

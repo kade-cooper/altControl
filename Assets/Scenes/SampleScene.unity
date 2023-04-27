@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &74502948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -932,6 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1 &257998846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7951303074092052768, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
@@ -1278,6 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &373328381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2971,6 +2974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &842856233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3322,6 +3326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &860420677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4107,6 +4112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &1119251870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5077,6 +5083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &1365762493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5583,6 +5590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1401093485}
+  currentLevel: SampleScene
 --- !u!1001 &1482297287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6906,6 +6914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1 &2064253917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3475091476574135514, guid: 2de43f9e35b6be74583877ad1944418c, type: 3}
@@ -7055,6 +7064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3798874895278033086, guid: 5c74563dda58f13479af47c6228f48d4, type: 3}
+  currentLevel: SampleScene
 --- !u!1001 &2075087009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7742,6 +7752,17 @@ PrefabInstance:
       objectReference: {fileID: 765642359}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd83f8fae987e549927feac08b8a552, type: 3}
+--- !u!114 &1838092256050733138 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 702606364821844257, guid: 3bd83f8fae987e549927feac08b8a552, type: 3}
+  m_PrefabInstance: {fileID: 1838092256050733137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2019724325639664614
 Transform:
   m_ObjectHideFlags: 0
@@ -7987,6 +8008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2575662426134773741, guid: 188d85a6fee39fb42932d74739734352, type: 3}
+      propertyPath: currentLevel
+      value: SampleScene
+      objectReference: {fileID: 0}
     - target: {fileID: 2575662426134773742, guid: 188d85a6fee39fb42932d74739734352, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8093,6 +8118,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 817133006}
     - target: {fileID: 2456050002625563244, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
+      propertyPath: maxRescue
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456050002625563244, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 597490786}
@@ -8104,6 +8133,10 @@ PrefabInstance:
       propertyPath: animalBoom
       value: 
       objectReference: {fileID: 4821819256533932714, guid: 6706509feb9fb114486d465d34215c4f, type: 3}
+    - target: {fileID: 2456050002625563244, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
+      propertyPath: rescuedTxt
+      value: 
+      objectReference: {fileID: 1838092256050733138}
     - target: {fileID: 2456050002625563244, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
       propertyPath: heliAnimObj
       value: 
@@ -8433,6 +8466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 835839844}
     m_Modifications:
+    - target: {fileID: 5135553453503706438, guid: ecaa0dbedc01c49409c7e0f4b94da28d, type: 3}
+      propertyPath: currentLevel
+      value: SampleScene
+      objectReference: {fileID: 0}
     - target: {fileID: 5135553453503706456, guid: ecaa0dbedc01c49409c7e0f4b94da28d, type: 3}
       propertyPath: m_MaskInteraction
       value: 1
@@ -9154,9 +9191,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1401093485}
+    - target: {fileID: 7951303073748890297, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
+      propertyPath: currentLevel
+      value: SampleScene
+      objectReference: {fileID: 0}
     - target: {fileID: 7951303073748890300, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951303074092052768, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}

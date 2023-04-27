@@ -27,11 +27,14 @@ public class player : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject animalBoom;
     public GameObject heliAnimObj;
+    public TextMeshProUGUI rescuedTxt;
+    public int maxRescue;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
         InvokeRepeating("PlaySound",0.001f,.8f);
+        rescuedTxt.text="Rescued: "+rescued+"/"+maxRescue;
     }
 
     void PlaySound(){
@@ -84,13 +87,14 @@ public class player : MonoBehaviour
         if(carried>0){
             Instantiate(animalBoom,this.transform.position,Quaternion.identity);
         }
-        if(rescued==8){
+        if(rescued==maxRescue){
             winMenuUI.SetActive(true);
             pauseEnabled();
             pauseMenu.SendMessage("togglePauseBool");
             Time.timeScale = 0f;
         }
         capacity.text="Capacity: "+carried+"/4";
+        rescuedTxt.text="Rescued: "+rescued+"/"+maxRescue;
     }
 
     public void pauseEnabled(){
