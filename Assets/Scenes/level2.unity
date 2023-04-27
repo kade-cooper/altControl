@@ -2563,6 +2563,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 5964931090971612567, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: f56a541e751ede14d89e5b8c5d970001, type: 2}
+    - target: {fileID: 5964931090971612567, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964931090971612567, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
+      propertyPath: m_Animations.Array.data[2]
+      value: 
+      objectReference: {fileID: 7400000, guid: f56a541e751ede14d89e5b8c5d970001, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0e79444fbe0da64e9df3d2f28a4b1c5, type: 3}
 --- !u!50 &869637679 stripped

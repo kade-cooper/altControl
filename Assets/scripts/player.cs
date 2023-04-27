@@ -49,13 +49,13 @@ public class player : MonoBehaviour
         moveVec.y = Input.GetAxis("Vertical") * vertSpeed * Time.deltaTime;
         Vector2 force = new Vector3(moveVec.x, 0f, 0f);
         if(moveVec.x>0){
-            heliAnimObj.SendMessage("moveRight");
+            //heliAnimObj.SendMessage("moveRight");
         }
         if(moveVec.x<0){
-            heliAnimObj.SendMessage("moveLeft");
+            //heliAnimObj.SendMessage("moveLeft");
         }
         else{
-            heliAnimObj.SendMessage("idle");
+            //heliAnimObj.SendMessage("idle");
         }
         Vector2 newPosition = this.transform.position + new Vector3(0f, moveVec.y, 0f);
         this.transform.position = newPosition;
