@@ -35,7 +35,7 @@ RectTransform:
   - {fileID: 7951303075194692414}
   - {fileID: 7951303073981438903}
   m_Father: {fileID: 7951303073748890296}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -265,8 +265,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7951303073584384166}
   - {fileID: 7951303074080935382}
+  - {fileID: 7951303073584384166}
   - {fileID: 7951303074092052769}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -352,6 +352,7 @@ MonoBehaviour:
   CanPause: 1
   pauseMenuUI: {fileID: 7951303074080935385}
   player: {fileID: 0}
+  currentLevel: 
 --- !u!1 &7951303073852076919
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +959,7 @@ RectTransform:
   - {fileID: 7951303074855083732}
   - {fileID: 7951303075470089916}
   m_Father: {fileID: 7951303073748890296}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

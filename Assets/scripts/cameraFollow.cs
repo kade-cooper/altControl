@@ -9,7 +9,7 @@ public class cameraFollow : MonoBehaviour
   
   void Update () 
   {
-    player = GameObject.FindWithTag("player");
+    //player = GameObject.FindWithTag("player");
     transform.position = new Vector3 (player.transform.position.x + offset.x, player.transform.position.y + offset.y, offset.z); 
   } 
 }
