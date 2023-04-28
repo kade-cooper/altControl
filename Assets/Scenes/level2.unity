@@ -986,7 +986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7951303073748890299, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7951303073748890300, guid: 3dd0825cc0431344abdd0423d65f5e17, type: 3}
       propertyPath: m_Name
@@ -1995,6 +1995,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
       propertyPath: capacity
       value: 
@@ -2362,6 +2366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: fb7f9afdf689fb3458f1544d080ae2e9, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: fb7f9afdf689fb3458f1544d080ae2e9, type: 3}
       propertyPath: capacity
       value: 
@@ -2701,6 +2709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
       propertyPath: capacity
       value: 
@@ -3011,6 +3023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
       propertyPath: capacity
       value: 
@@ -5508,6 +5524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: fb7f9afdf689fb3458f1544d080ae2e9, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: fb7f9afdf689fb3458f1544d080ae2e9, type: 3}
       propertyPath: capacity
       value: 
@@ -5798,6 +5818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597493290091652486, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
+      propertyPath: capacity
+      value: 
+      objectReference: {fileID: 182918171}
     - target: {fileID: 6398409597984425017, guid: 52e67c3446f133243944bfd3e14cbb5f, type: 3}
       propertyPath: capacity
       value: 

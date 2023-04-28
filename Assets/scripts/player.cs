@@ -71,7 +71,7 @@ public class player : MonoBehaviour
     }
     public void enablePerson(){
         animalModel.gameObject.GetComponent<Renderer> ().enabled = true;
-        ropeEndO.tag = "ropeEndDisabled";
+        ropeEndO.tag = "ropeEndAnimal";
         Debug.Log(ropeEndO.tag);
     }
     public void addCarried(){

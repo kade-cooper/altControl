@@ -13,11 +13,14 @@ public class rescueable : MonoBehaviour
         if(other.gameObject.CompareTag("ropeEnd")){
             player.SendMessage("enablePerson");
             Destroy(this.gameObject, 0f);
-            Debug.Log(capacity);
+            //Debug.Log(capacity);
         }
         else if(other.gameObject.CompareTag("ropeEndDisabled")){
             Debug.Log(capacity);
             capacity.SetActive(true);
+        }
+        else if(other.gameObject.CompareTag("ropeEndAnimal")){
+            
         }
     }
     private void OnCollisionExit2D(Collision2D other){

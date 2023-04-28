@@ -9,6 +9,7 @@ TagManager:
   - ropeEnd
   - ropeEndDisabled
   - capacityText
+  - ropeEndAnimal
   layers:
   - Default
   - TransparentFX
