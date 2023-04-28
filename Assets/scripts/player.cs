@@ -83,10 +83,11 @@ public class player : MonoBehaviour
     }
     public void dropOff(){
         rescued+=carried;
-        carried=0;
         if(carried>0){
+            Debug.Log("i run");
             Instantiate(animalBoom,this.transform.position,Quaternion.identity);
         }
+        carried=0;
         if(rescued==maxRescue){
             winMenuUI.SetActive(true);
             pauseEnabled();
